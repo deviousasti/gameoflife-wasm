@@ -1,0 +1,39 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+h1 {
+	margin-bottom: 10px;
+}
+
+table {
+	border-collapse: collapse;
+}
+td {
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	transition: background-color 100ms linear;
+}
+	td.live {
+		background-color: black;
+	}
+
+	td.dead {
+		background-color: white;
+	}
+
+nav {
+	padding-top: 10px;
+}
+
+nav > button {
+	margin-right: 5px;
+}
