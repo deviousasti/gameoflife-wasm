@@ -12,7 +12,7 @@ There are no limitations on what portions of the library are available, rather a
 There is no HTML component; the entire Model-View-Update (MVU) application is written in Elmish in `Main.fs`.
 The model is immutable, so all updates are transformations. (most implementations which use double-buffering and array mutations). 
 
-### Observations
+## Observations
 
 Interop with the JS runtime seems to be expensive, while calculating the diff is not costly.
 
@@ -24,4 +24,5 @@ So enough memory pressure is generated to cause a GC.
 
 ![image](https://user-images.githubusercontent.com/2375486/84602915-324f0680-aea8-11ea-99d0-67e59c105e63.png)
 
-This is minor GC collection and very fast (less than 1ms).
+This is a minor GC and very fast (less than 1ms).
+
